@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -15,8 +14,6 @@
     <link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-
-    <!-- Custom styles for this template -->
   </head>
 
   <body>
@@ -25,7 +22,7 @@
       <div id="logo">
         <img src="images/top-logo.png" alt="logo">
       </div>
-    
+    <!-- Début menu pour screen > 767px -->
       <div class="navLinks" id="normalLinks">
           <div>
             <a href="#who">WHO WE ARE</a>
@@ -34,14 +31,17 @@
             <a href="#get-involved">GET INVOLVED</a>
           </div>
       </div>
+    <!-- Fin menu pour screen > 767px -->
     </nav>
 
     <a href="javascript:void(0);" id="sandMenu" onclick="mobileFunction()">
         <i class="fa fa-bars"></i>
     </a>
 
-    <div id="ghost"></div>
 
+    <div id="ghost"></div> <!-- pour pouvoir annuler la fonction "float"dans la suite, avec l'attribut "clear: both" en css... -->
+
+    <!-- Début menu pour smartphone -->
       <div class="navLinks" id="mobileLinks">
           <div>
             <a href="#who" onclick="hideFunction()">WHO WE ARE</a>
@@ -50,16 +50,15 @@
             <a href="#get-involved" onclick="hideFunction()">GET INVOLVED</a>
           </div>
       </div>
-
+    <!-- Fin menu pour smartphone -->
     
     <div id="home"  onclick="navFunction()">
-      <!-- Votre code ici -->
+
         <div id="homeText">
             <h1>Our goal is to inspire<br>Tallahassee to write 1,000,000<br>lines of code_</h1>
-  <!--       </div>
-        <div id="whoPar"> -->
+
             <p>All over the country people are taking the <span class="motblanc">HOUR OF CODE</span> challenge issued by <span class="motblanc">CODE.org</span>. Millions of lines of code are being written. In the capital of Florida, Thallahassee, the community is taking the challenge and our goal is to writte 1,000,000 lines of code_</p>
-  <!--       </div> -->
+
             <button class="bouton1 type="button">Learn more »</button>
         </div>
         <div id="logo_code"><img src="images/code.png" alt="logo_code">
@@ -108,7 +107,7 @@
       </div>
       
     </div>
-
+    
     <footer>
       <div id="footer">
       <img src="images/one-million-bottom-brand.png" alt="motto">

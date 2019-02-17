@@ -1,11 +1,14 @@
 
-body {
+html, body {
 	font-family: Arvo, Arial, "sans-serif";
 	margin: 0;
 	padding: 0;
 }
 
 #navigation {
+	position: absolute;
+    width: 100%;
+    top: 0;
 	display: flex;
 	justify-content: flex-start;
 	align-content: center;
@@ -69,6 +72,7 @@ body {
 }
 
 #home {
+	padding-top: 50px;
 	background-image: url(images/hero-image.jpg);
 	text-align: center;
 }
@@ -198,10 +202,11 @@ footer {
 }
 
 footer img {
-	padding-top: 140px;
-	padding-left: 15px;
-	width: 550px;
-	height: 70px;
+    padding-top: 140px;
+    padding-left: 15px;
+    max-width: 550px;
+    width: 75%;
+    max-height: 70px;
 }
 
 .fa-chevron-circle-up {
@@ -215,8 +220,9 @@ footer img {
     position: fixed;
     z-index: 99;
     bottom: 4%;
-    right: 1%;
+    right: 2%;
 }
+
 .fa-arrow-circle-up{
     color: #333333;
 }
